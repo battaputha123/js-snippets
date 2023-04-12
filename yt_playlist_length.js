@@ -4,8 +4,8 @@ const timeParse = (timeString) => {
   const timePartLength = timeParts.length;
   const timeObject = {
     hours: timePartLength >= 3 ? timeParts[0] : 0,
-    minutes: timePartLength >= 2 ? timeParts[timeParts.length - 2] : 0,
-    seconds: timePartLength >= 1 ? timeParts[timeParts.length - 1] : 0
+    minutes: timePartLength >= 2 ? timeParts[timePartLength - 2] : 0,
+    seconds: timePartLength >= 1 ? timeParts[timePartLength - 1] : 0
   };
   return timeObject
 } 
